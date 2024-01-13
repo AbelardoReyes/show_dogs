@@ -1,0 +1,17 @@
+<div>
+  <div class="navbar">
+    <div>
+      <h1>Bienvenido {{ username.username }}</h1>
+      <button class="prettyButton" (click)="logout()">Logout</button>
+    </div>
+  </div>
+  <div>
+    <p>Presiona el boton para obtener 3 imagenes diferentes</p>
+    <button class="prettyButton" (click)="getDogsPictures()">Obtener</button>
+  </div>
+  <div class="image-container">
+    <div *ngFor="let dog of dataSource" class="column">
+      <img [src]="dog.image" />
+    </div>
+  </div>
+</div>

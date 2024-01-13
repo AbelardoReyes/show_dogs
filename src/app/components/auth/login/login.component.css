@@ -1,0 +1,30 @@
+:host {
+  display: block;
+}
+
+.body {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  margin: auto;
+}
+.card {
+  width: 100%;
+  max-width: 500px;
+  margin: auto;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+  margin-top: 10%;
+}
+.prettyButton {
+  background-color:cadetblue;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  width: 100%;
+}

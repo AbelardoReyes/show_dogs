@@ -1,0 +1,31 @@
+<div class="body">
+  <div class="card">
+    <h1 style="text-align: center">Login</h1>
+    <form [formGroup]="form">
+      <div class="row">
+        <div style="text-align: center">
+          <mat-form-field class="example-full-width" appearance="outline">
+            <mat-label>Username</mat-label>
+            <input matInput type="text" formControlName="username" />
+            <mat-error *ngIf="form.controls['username'].hasError('required')">
+              El username es requerido
+            </mat-error>
+          </mat-form-field>
+        </div>
+        <div style="text-align: center">
+          <mat-form-field class="example-full-width" appearance="outline">
+            <mat-label>password</mat-label>
+            <input matInput type="password" formControlName="password" />
+            <mat-error *ngIf="form.controls['password'].hasError('required')">
+              El password es requerido
+            </mat-error>
+          </mat-form-field>
+        </div>
+        <p>El password es: <strong>1234</strong></p>
+        <div>
+          <button class="prettyButton" (click)="saveData()">Ingresar</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
