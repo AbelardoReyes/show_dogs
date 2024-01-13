@@ -7,7 +7,7 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "serve:ssr:cartelera_front": "node dist/cartelera_front/server/server.mjs"
+    "serve:ssr:show_dogs": "node dist/show_dogs/server/server.mjs"
   },
   "private": true,
   "dependencies": {
